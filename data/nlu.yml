@@ -1,0 +1,367 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hi there
+    - greetings
+    - Hi budy
+    - helo
+    - Hi!
+    - Hi'
+    - Hi,
+    - Hi, bot
+    - Hieee
+    - Hieeeeeeeeeeeee
+    - Hola
+    - What is up?
+    - Whats up
+    - Whats up my bot
+    - Whats up?
+    - ayyyy whaddup
+    - bhoomija How can you help me
+    - ey boss
+    - I said, helllllloooooO!!!!
+    - Well hello there ;)
+    - bhoomija I need you
+    - need your assistance
+    - please answer my query
+    - salahkar need your help?
+    - Ram Ram
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - see ya
+    - buh bye
+    - Bye bye
+    - adios
+    - adios?
+    - bye bhoomija
+    - bye bot
+    - bye bye bot
+    - bye for now
+    - bye udo
+    - bye was nice talking to you
+    - bye!
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye rasa bot!
+    - goodbye.
+    - goodnight
+    - gotta go
+    - ok Bye
+    - ok bye
+    - ok, bye
+    - ok.bye
+    - see u later
+    - see you
+    - see you . bye
+    - take care
+    - then bye
+    - tlak to you later
+    - toodle-oo
+    - byr
+    - buy Bhoomija see you
+    - catch you later bhoomija
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - - are you a bot?
+    - you are a bot right
+    - aren't you a bot
+    - Are you a bot?
+    - are you a BOT
+    - are you a chatbot
+    - are you a rasa bot?
+    - are you a real bot?
+    - are you a robot
+    - are you ai
+    - are you artificial
+    - are you artificial intelligence
+    - are you bot
+    - are you bot?
+    - are you rasa bot?
+    - are you real
+    - are you real lol
+    - are you really a bot
+    - are you robot
+    - are you sure that you're a bot?
+    - bot?
+    - cuz you are a bot
+    - i guess you are a chatbot
+    - oh are you chatbot?
+    - tell me, are you a bot?
+    - what are you, a bot?
+    - you are a robot
+    - you are ai
+    - you are chatbot
+    - you're a bot
+    - you robo
+    - real bot then?
+    - are you really a bbot?
+- intent: maize_intro
+  examples: |
+    - tell me about maize
+    - What is maize
+    - tell me about corn
+    - maize in india
+- intent: maize_producing_state
+  examples: |
+    - what are the state producing maize crop
+    - corn producing state
+    - I want to know about the maize producing state
+    - Statistics of corn around India
+    - what are the maize  produccing state in India?
+    - what are the corn  producing state?
+    - what are the bhutta  producing state?
+    - which states produces maize in India?
+- intent: climate_for_maize_Cultivation
+  examples: |
+    - what is best climate for maize cultivation
+    - best climate condition for maize
+    - climate required for maize cultivation
+    - climate condition of the maize crop
+- intent: season_for_maize_production
+  examples: |
+    - In which season maize can be grown
+    - what is season for maize cultivation in India
+    - best season to grow maize
+    - season maize can be grown
+- intent: soil_for_maize_production_in_India
+  examples: |
+    - soil condtion for maize production
+    - types of soil requirement for maize
+    - soil need for bhutta cultivation
+    - what is soil condition required for the maize cultivation
+    - can you tell me about the soil requirement for the maize crop
+    - types of soil in which maize can be grown
+    - soil requirement of maize
+- intent: crop_rotation_with_maize_crop
+  examples: |
+    - do you have any idea about the crop rotation
+    - How crop rotation can be done with the maize crop
+    - crop rotation with maize
+    - Tell me something more about the crop rotation
+- intent: water_requirement_in_maize_production
+  examples: |
+    - irrigation requirement of the maize crop
+    - can you tell me water requirement of the maize cultivation
+    - How much water is required for the maize cultivation
+    - how to irrigate maize
+- intent: Pests_and_Diseases_in_maize_cultivation
+  examples: |
+    - what are the pest and diseases in maize cultivation
+    - tell me about pest and disease in maize cultivation
+    - what are disease and pest found in maize
+    - How pest and disease affect maize crop
+    - pest in maize
+    - common pest in corn
+    - common disease in maize crop
+- intent: seed_rate_of_Maize_per_acre
+  examples: |
+    - what is seed rate of maize per acre?
+    - what is seed rate of corn per acre?
+    - what is seed rate of maize/corn per acre?
+- intent: Seed_germination_time_and_temperature_of_Maize
+  examples: |
+    - what is seed germination time and temperature of maize?
+    - what is seed germination time?
+    - what is maize seed germination time?
+    - how long maize seeds take to germinate.
+- intent: spacing_of_Maize_seed_or_Maize_plant_distance
+  examples: |
+    - what should be distance between maize plant?
+    - what should be spacing of maize seed or maize plant distance.
+    - what is the distance between maize seed?
+    - can you explain spacing of maize seed or maize plant distance.
+- intent: maize_sowing_and_planting_tips
+  examples: |
+    - Will you give me some tips for maize cultivation.
+    - Maize cultivation guideline.
+    - need suggestion about  maize cultivation?
+    - What is best practice for the maize cutivation.
+    - maize planting tips
+    - corn cultivation best practice
+- intent: Process_of_germinating_Maize_seeds
+  examples: |
+    - what is the process of germinating maize seeds
+    - explain the process of geminating maize seeds
+    - methods for the maize germination seeeds
+    - briefly explain the process of maize germination
+- intent: How_much_Maize_do_you_get_from_one_plant
+  examples: |
+    - How much Maize do you get from one plant
+    - what quantity we can get from single maize plant
+    - how much maize can be obtained form a single plant
+    - tell me the quantaity of the maize obtained from plant
+- intent: Maize_changing_color
+  examples: |
+    - Why my maize is turning purple?
+    - reasons for maize turning pupple.
+    - what happened to my maize it is changing its colour to purple?
+    - why my maize is changing into purple?
+    - Why my maize is turning red?
+    - reasons for maize turning red.
+    - what happened to my maize it is changing its colour to red?
+    - why my maize is changing into red?
+    - my maize is changing color
+    - color change in maize
+    - reasons for color changing in maize crop
+- intent: How_long_does_Maize_take_to_grow
+  examples: |
+    - How long does Maize take to grow?
+    - What is duraion of maize to grow?
+    - How much time is required to grow maize
+    - time required to grow maize
+    - approx time period for maize cultivation
+    - duration of the maize production
+    - How many months is maize ready to harvest
+    - How many month is required to harvest maize
+    - In how many month maize ready to harvest
+    - can you tell approximate month required to harvest maize
+    - do you know how many month maize can be harvested
+- intent: need_to_soakMaize_needs_before_planting
+  examples: |
+    - Do you need to soak Maize seeds before planting?
+    - Is it necessary to soak maize seeds before at the time of showing?
+- intent: Maize_need_light_to_germinate
+  examples: |
+    - Does Maize need light to germinate?
+    - What is the light requirement to germinate maize seeds?
+- intent: chitchat/maize_natural_enemies
+  examples: |
+    - What are the natural enemies found in maize?
+    - natural enemies found in maize ?
+    - Name the natural enemies found in maize.
+- intent: chitchat/pheromone_traps_in_maize
+  examples: |
+    - What is the role of pheromone traps in maize?
+    - pheromone traps in maize?
+    - What is pheromone traps in maize?
+- intent: play_video
+  examples: |
+    - play [maize cultivation](search_url)
+    - play the video [maize cultivation](search_url)
+    - open the url [maize cultivation](search_url)
+    - open the link in browser [maize cultivation](search_url)
+    - show me the video [maize cultivation](search_url) that i asked for
+    - show video [maize cultivation](search_url)
+    - show me [maize cultivation](search_url)
+    - i am looking for video on [paddy cultivation](search_url)
+    - videos on [paddy disease]{"entity": "search_url", "value": "paddy diseasee"}
+    - [paddy disease](search_url)
+    - [potato disease](search_url)
+    - [maize disease]{"entity": "search_url", "value": "potato disease"}
+    - [wheat](search_url)
+    - [wheat farming](search_url)
+    - [wheat cultivation](search_url)
+- intent: give_time
+  examples: |
+    - can you tell me what time it is
+    - tell me the time
+    - got the time
+    - what time is it
+- intent: location
+  examples: |
+    - I live in [Bhagalpur](location)
+    - I live in [Khagaria](location)
+    - City name is [Bhagalpur](location)
+    - [Bhagalpur](location)
+    - My current location is [Hassan](location)
+    - Currently I am located in [Dharwad](location)
+    - [Bidar](location)
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who's the US President?
+    - kya karen
+    - covid
+    - Karnataka
+- intent: Current_Daily_Price
+  examples: |
+    - [paddy](search_url)
+- synonym: paddy diseasee
+  examples: |
+    - paddy disease
+- synonym: potato disease
+  examples: |
+    - maize disease

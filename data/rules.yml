@@ -1,0 +1,236 @@
+version: "2.0"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: respond to chitchat
+  steps:
+  - intent : chitchat
+  - action: utter_chitchat
+
+- rule: out-of-scope
+  steps:
+  - intent: nlu_fallback
+  - action: utter_out_of_scope
+# rule to agriculture_input_info
+- rule: agriculture_input_info
+  steps:
+  - intent: agriculture_input_info
+  - action: utter_agriculture_input_info
+# rule to fertilizer_calulation_link_poen
+- rule: fertilizer_calulation_link_open
+  steps:
+  - intent: fertlizer_calculation_info
+  - action: fertilizer_calulation_link
+  - action: utter_look_more
+# rule to soil moisture 
+- rule: soil_moisture_data_open
+  steps:
+  - intent: soil_info
+  - action: soil_moisture_database_open
+  - action: utter_look_more
+# rule to soil moisture 
+- rule: soil_nutrient_data_open
+  steps:
+  - intent: soil_nutrient_info
+  - action: soil_nutrient_info_database_open
+  - action: utter_look_more
+# rule to ask_query
+- rule: ask_query
+  steps:
+  - intent: query
+  - action: utter_query
+# rule to ask animal info
+- rule: ask_animal_info
+  steps:
+  - intent: animal_info
+  - action: utter_animal_and_husbandary
+# rule to ask animal info
+- rule: ask_agriculture_info
+  steps:
+  - intent: agriculture_info
+  - action: utter_agriculture_info
+# rule to Post_Harvest_info info
+- rule: ask_Post_Harvest_info
+  steps:
+  - intent: Post_Harvest_info
+  - action: utter_Post_Harvest_info
+# rule to activate veterinary centre form
+- rule: veterinary_centre_info
+  steps: 
+  - intent: veterinary_centre
+  - action: utter_veterinary_centre_data
+  - action: utter_ask_veterinary_centre_state_Name
+  - action: veterinary_centre_form
+  - active_loop: veterinary_centre_form
+# rule to query veterinary centre 
+- rule: Submit search veterinary centre form
+  condition:
+  # Condition that form is active.
+  - active_loop: veterinary_centre_form
+  steps:
+  # Form is deactivated
+  - action: veterinary_centre_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: veterinary_centre_submit
+  - action: utter_look_more
+  - action: action_restart
+
+# rule to crop_recommendation info form
+- rule: crop_recommendation_info
+  steps: 
+  - intent: crop_recommendation
+  #- action: utter_ask_msp_crop_name
+  - action: Crop_recommendation_form
+  - active_loop: Crop_recommendation_form
+# rule to crop_recommendation submit 
+- rule: Submit crop_recommendation form
+  condition:
+  # Condition that form is active.
+  - active_loop: Crop_recommendation_form
+  steps:
+  # Form is deactivated
+  - action: Crop_recommendation_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: crop_recommendation_submit
+  - action: utter_look_more
+  - action: action_restart
+
+
+
+# rule to activate Diagnostic Laboratory form
+- rule: Diagnostic_Laboratory_info
+  steps: 
+  - intent: Diagnostic_Laboratory_info
+  - action: utter_ask_Diagnostic_Laboratory_state_Name
+  - action: Diagnostic_Laboratory_form
+  - active_loop: Diagnostic_Laboratory_form
+# rule to query veterinary centre 
+- rule: Submit search Diagnostic Laboratory form
+  condition:
+  # Condition that form is active.
+  - active_loop: Diagnostic_Laboratory_form
+  steps:
+  # Form is deactivated
+  - action: Diagnostic_Laboratory_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: Diagnostic_Laboratory_submit
+  - action: utter_look_more
+  - action: action_restart
+
+# rule to MSP info form
+- rule: crop_msp_info
+  steps: 
+  - intent: msp_info
+  #- action: utter_ask_msp_crop_name
+  - action: msp_info_form
+  - active_loop: msp_info_form
+# rule to msp info submit 
+- rule: Submit search msp info form
+  condition:
+  # Condition that form is active.
+  - active_loop: msp_info_form
+  steps:
+  # Form is deactivated
+  - action: msp_info_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: msp_info_form_submit
+  - action: utter_look_more
+  - action: action_restart
+
+# rule to Current_Daily_Price info form
+- rule: Current_Daily_Price_info
+  steps: 
+  - intent: Current_Daily_Price
+  #- action: utter_ask_msp_crop_name
+  - action: Current_Daily_Price_form
+  - active_loop: Current_Daily_Price_form
+# rule to Current_Daily_Price info submit
+- rule: Submit Current Daily Price info form
+  condition:
+  # Condition that form is active.
+  - active_loop: Current_Daily_Price_form
+  steps:
+  # Form is deactivated
+  - action: Current_Daily_Price_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: Current_Daily_Price_form_submit
+  - action: utter_look_more
+  - action: action_restart
+
+
+# rule to activate video form  
+- rule: Activate search video form
+  steps:
+  - intent: play_video
+  - action: utter_search_video
+  - action: search_video_form
+  - active_loop: search_video_form
+
+
+
+# rule for searching videos form
+- rule: Submit search video form
+  condition:
+  # Condition that form is active.
+  - active_loop: search_video_form
+  steps:
+  # Form is deactivated
+  - action: search_video_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: search_video_submit
+  - action: utter_look_more
+  - action: action_restart
+  
+
+# rule for weather form activate
+- rule: Activate give location to know weather form
+  steps:
+  - intent: weather_info
+  - action: utter_weather
+  - action: location_entry_form
+  - active_loop: location_entry_form
+    
+# rule for weather search form
+- rule: Submit location for weather form
+  condition:
+  # Condition that form is active.
+  - active_loop: location_entry_form
+  steps:
+  # Form is deactivated
+  - action: location_entry_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  # The actions we want to run when the form is submitted.
+  - action: location_entry_to_know_weather_submit
+  - action: utter_look_more
+  - action: action_restart
+

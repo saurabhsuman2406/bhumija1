@@ -1,0 +1,174 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: maize path
+  steps:
+  - intent: maize_intro
+  - action: utter_maize
+- story: maize_producing_state
+  steps:
+  - intent: maize_producing_state
+  - action: utter_maize_producing_state
+ 
+
+- story: climate_for_maize path
+  steps:
+  - intent: climate_for_maize_Cultivation 
+  - action: utter_climate_for_maize_Cultivation
+- story: season_for_maize_production path
+  steps:
+  - intent: season_for_maize_production
+  - action: utter_season_for_maize_production
+- story: soil_for_maize_production_in_India path
+  steps:
+  - intent: soil_for_maize_production_in_India
+  - action: utter_soil_for_maize_production_in_India 
+
+- story: crop_rotation_with_maize path
+  steps:
+  - intent: crop_rotation_with_maize_crop
+  - action: utter_crop_rotation_with_maize_crop
+
+- story: water_requirement_in_maize_production path
+  steps:
+  - intent: water_requirement_in_maize_production
+  - action: utter_water_requirement_in_maize_production
+
+- story: Pests_and_Diseases_in_maize_cultivation path
+  steps:
+  - intent: Pests_and_Diseases_in_maize_cultivation
+  - action: utter_Pests_and_Diseases_in_maize_cultivation
+- story: seed_rate_of_Maize path
+  steps:
+  - intent: seed_rate_of_Maize_per_acre
+  - action: utter_seed_rate_of_Maize_per_acre
+
+- story: Seed_germination_time_and_temperature_of_Maize path
+  steps:
+  - intent: Seed_germination_time_and_temperature_of_Maize
+  - action: utter_Seed_germination_time_and_temperature_of_Maize
+
+- story: spacing_of_Maize_seed
+  steps:
+  - intent: spacing_of_Maize_seed_or_Maize_plant_distance
+  - action: utter_spacing_of_Maize_seed_or_Maize_plant_distance
+
+- story: maize_sowing_and_planting tips path
+  steps:
+  - intent: maize_sowing_and_planting_tips
+  - action: utter_maize_sowing_and_planting_tips
+- story: Process_of_germinating_Maize_seeds path
+  steps:
+  - intent: Process_of_germinating_Maize_seeds
+  - action: utter_Process_of_germinating_Maize_seeds1
+  - action: utter_Process_of_germinating_Maize_seeds2
+  - action: utter_Process_of_germinating_Maize_seeds3
+  - action: utter_Process_of_germinating_Maize_seeds4
+  - action: utter_Process_of_germinating_Maize_seeds5
+
+- story: How_long_does_Maize_take_to_grow path
+  steps:
+  - intent: How_long_does_Maize_take_to_grow
+  - action: utter_How_long_does_Maize_take_to_grow
+      
+- story: Maize_changing_color path
+  steps:
+  - intent: Maize_changing_color
+  - action: utter_Maize_turning_purple
+  - action: utter_Maize_turning_red
+- story: How_much_Maize_do_you_get_from_one_plant path
+  steps:
+  - intent: How_much_Maize_do_you_get_from_one_plant
+  - action: utter_How_much_Maize_do_you_get_from_one_plant
+- story: need_to_soakMaize_needs_before_planting path
+  steps: 
+  - intent: need_to_soakMaize_needs_before_planting
+  - action: utter_need_to_soakMaize_needs_before_planting
+
+- story: Maize_need_light_to_germinate path
+  steps:
+  - intent: Maize_need_light_to_germinate
+  - action: utter_Maize_need_light_to_germinate
+- story: Know time
+  steps: 
+  - intent: give_time
+  - action: action_show_time
+
+- story: weed operation
+  steps: 
+  - intent: farm_machinary
+  - action: utter_farm_machinary
+  - intent: operate_weeder
+  - action: utter_operate_weeder
+  - intent: move_right
+  - action: utter_move_right
+  - action: utter_operate_weeder
+  - intent: move_forward
+  - action: utter_move_forward
+  - action: utter_operate_weeder
+  - intent: move_stop
+  - action: utter_move_stop
+  - action: utter_operate_weeder
+  - intent: move_left
+  - action: utter_move_left
+  - action: utter_operate_weeder
+  - intent: move_back
+  - action: utter_move_back
+  - action: utter_operate_weeder
+ 
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: query
+  - action: utter_query
+  - intent: agriculture_info
+  - action: utter_agriculture_info
+  - intent: Post_Harvest_info
+  - action: utter_Post_Harvest_info
+  - intent: Current_Daily_Price
+  - action: Current_Daily_Price_form
+  - active_loop: Current_Daily_Price_form
+  - slot_was_set:
+    - requested_slot: Current_Daily_Price_state
+  - slot_was_set:
+    - Current_Daily_Price_state: Karnataka
+  - slot_was_set:
+    - requested_slot: Current_Daily_Price_commodity
+  - slot_was_set:
+    - search_url: paddy
+  - slot_was_set:
+    - Current_Daily_Price_commodity: paddy
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: Current_Daily_Price_form_submit
