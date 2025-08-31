@@ -1,0 +1,35 @@
+class ActioncropRecommendationSubmit(Action):
+    def name(self) -> Text:
+        return "crop_recommendation_submit"
+
+    def run(
+        self,
+        dispatcher,
+        tracker: Tracker,
+        domain: "Dict",
+    ) -> List[Dict[Text, Any]]:
+        nitrogen=tracker.get_slot("nitrogen")
+        potassium=tracker.get_slot("potassium")
+        phosphorus=tracker.get_slot("phosphorus")
+        temperature=tracker.get_slot("temperature")
+        humidity=tracker.get_slot("humidity")
+        ph=tracker.get_slot("ph")
+        rainfall=float(tracker.get_slot("rainfall"))
+        warnings.filterwarnings('ignore')
+        PATH = 'Crop_recommendation.csv'
+        df = pd.read_csv(PATH)
+        features = df[['N', 'P','K','temperature', 'humidity', 'ph', 'rainfall']]
+        target = df['label']
+        labels = df['label']
+        acc = []
+        model = []
+        Xtrain, Xtest, Ytrain, Ytest = train_test_split(features,target,test_size = 0.2,random_state =2)
+        RF = RandomForestClassifier(n_estimators=20, random_state=0)
+        RF.fit(Xtrain,Ytrain)
+        data = np.array([[float(nitrogen),float(potassium),float(phosphorus),float(temperature),float(humidity),float(ph),float(rainfall)]])
+#       data = np.array([[104,18, 30, 23.603016, 60.3, 6.7, 140.91]])
+        prediction = RF.predict(data)
+        r=prediction[0]
+        #print(prediction)   
+        dispatcher.utter_message("Bhoomija Recommends "+r+" for your farm")
+        return []

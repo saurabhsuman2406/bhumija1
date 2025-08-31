@@ -1,0 +1,428 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- query
+- agriculture_info
+- Current_Daily_Price:
+    use_entities:
+    - Current_Daily_Price_state
+    - Current_Daily_Price_commodity
+- Post_Harvest_info
+- out_of_scope
+- greet
+- chitchat:
+    is_retrieval_intent: true
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+- maize_intro
+- maize_producing_state
+- climate_for_maize_Cultivation
+- season_for_maize_production
+- soil_for_maize_production_in_India
+- crop_rotation_with_maize_crop
+- seed_rate_of_Maize_per_acre
+- water_requirement_in_maize_production
+- Pests_and_Diseases_in_maize_cultivation
+- Seed_germination_time_and_temperature_of_Maize
+- spacing_of_Maize_seed_or_Maize_plant_distance
+- maize_sowing_and_planting_tips
+- How_long_does_Maize_take_to_grow
+- How_much_Maize_do_you_get_from_one_plant
+- Maize_changing_color
+- need_to_soakMaize_needs_before_planting
+- Maize_need_light_to_germinate
+- Process_of_germinating_Maize_seeds
+- give_time
+- animal_info
+- veterinary_centre
+- operate_weeder
+- farm_machinary
+- move_forward
+- move_stop
+- move_left
+- move_right
+- move_back
+- veterinary_centre_state:
+    use_entities:
+    - veterinary_centre_State_Name
+- veterinary_centre_District:
+    use_entities:
+    - veterinary_centre_District_Name
+- veterinary_centre_Block:
+    use_entities:
+    - veterinary_centre_Block_Name
+- Diagnostic_Laboratory_info
+- Diagnostic_Laboratory_State_Name:
+    use_entities:
+    - Diagnostic_Laboratory_State_Name
+- agriculture_input_info
+- fertlizer_calculation_info
+- soil_info
+- soil_nutrient_info
+- crop_recommendation
+- crop_recommendation_data:
+    use_entities:
+    - ph
+    - rainfall
+    - temperature
+    - humidity
+    - potassium
+    - phosphorus
+    - nitrogen
+- msp_info
+- msp_crop_name:
+    use_entities:
+    - msp_crop_name
+    - msp_year
+- play_video
+- search_video:
+    use_entities:
+    - search_url
+- weather_info
+- location:
+    use_entities:
+    - location
+entities:
+- Current_Daily_Price_commodity
+- Current_Daily_Price_state
+- Diagnostic_Laboratory_State_Name
+- humidity
+- location
+- msp_crop_name
+- msp_year
+- nitrogen
+- ph
+- phosphorus
+- potassium
+- rainfall
+- search_url
+- temperature
+- veterinary_centre_Block_Name
+- veterinary_centre_District_Name
+- veterinary_centre_State_Name
+slots:
+  search_url:
+    type: text
+    influence_conversation: false
+  location:
+    type: text
+    influence_conversation: false
+  veterinary_centre_State_Name:
+    type: text
+    influence_conversation: false
+  veterinary_centre_District_Name:
+    type: text
+    influence_conversation: false
+  veterinary_centre_Block_Name:
+    type: text
+    influence_conversation: false
+  Diagnostic_Laboratory_State_Name:
+    type: text
+    influence_conversation: false
+  msp_crop_name:
+    type: text
+    influence_conversation: false
+  msp_year:
+    type: text
+    influence_conversation: false
+  Current_Daily_Price_state:
+    type: text
+    influence_conversation: false
+  Current_Daily_Price_commodity:
+    type: text
+    influence_conversation: false
+  nitrogen:
+    type: text
+    influence_conversation: false
+  potassium:
+    type: text
+    influence_conversation: false
+  phosphorus:
+    type: text
+    influence_conversation: false
+  temperature:
+    type: text
+    influence_conversation: false
+  humidity:
+    type: text
+    influence_conversation: false
+  ph:
+    type: text
+    influence_conversation: false
+  rainfall:
+    type: text
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hey! I am a Kissan Shalakar bot. How can I help you.
+    buttons:
+    - title: Search Video
+      payload: /play_video
+    - title: Weather Information
+      payload: /weather_info
+    - title: Ask me
+      payload: /query
+    - title: Farm Machinary
+      payload: /farm_machinary
+  utter_look_more:
+  - text: Want to ask more!.
+    buttons:
+    - title: Search Video
+      payload: /play_video
+    - title: Weather Information
+      payload: /weather_info
+    - title: Get Information
+      payload: /query
+    - title: Farm Machinary
+      payload: /farm_machinary
+  utter_search_video:
+  - text: Searching video
+  utter_ask_search_url:
+  - text: Type topic to search video?
+  utter_welcome:
+  - text: Hello! I am a Kissan Shalakar bot. How can I help you.
+  utter_weather:
+  - text: To Know Weather Information!
+  utter_ask_location:
+  - text: Please tell your city name?
+  utter_query:
+  - text: Choose the Information Category !.
+    buttons:
+    - title: Animal and Husbandary
+      payload: /animal_info
+    - title: Agriculture
+      payload: /agriculture_info
+  utter_agriculture_info:
+  - text: Choose the Information Category !.
+    buttons:
+    - title: Post Harvest
+      payload: /Post_Harvest_info
+    - title: Input
+      payload: /agriculture_input_info
+  utter_agriculture_input_info:
+  - text: Choose the Information Category !.
+    buttons:
+    - title: Fertilzer Calculation
+      payload: /fertlizer_calculation_info
+    - title: Soil Moisture
+      payload: /soil_info
+    - title: Soil Nutrient
+      payload: /soil_nutrient_info
+    - title: crop recommendation
+      payload: /crop_recommendation
+  utter_Post_Harvest_info:
+  - text: Choose the Information Category !.
+    buttons:
+    - title: MSP
+      payload: /msp_info
+    - title: Current Daily Price
+      payload: /Current_Daily_Price
+  utter_animal_and_husbandary:
+  - text: Choose the Information Category !.
+    buttons:
+    - title: Veterinary Centre
+      payload: /veterinary_centre
+    - title: Diagnostic Laboratory
+      payload: /Diagnostic_Laboratory_info
+  utter_farm_machinary:
+  - text: Choose the Information Category !
+    buttons:
+    - title: Weed Control
+      payload: /operate_weeder
+    - title: Soil
+      payload: /soil_info
+    - title: Crop Recomendation
+      payload: /crop_recommendation
+  utter_operate_weeder:
+  - text: Click on Command Button to operate !
+    buttons:
+    - title: LEFT
+      payload: /move_left
+    - title: RiGHT
+      payload: /move_right
+    - title: Forward
+      payload: /move_forward
+    - title: Back
+      payload: /move_back
+    - title: Stop
+      payload: /move_stop
+  utter_move_left:
+  - text: Turn Left!
+  utter_move_right:
+  - text: Moving Right!
+  utter_move_forward:
+  - text: Moving Forward!
+  utter_move_back:
+  - text: Moving Back!
+  utter_move_stop:
+  - text: Stoping!
+  utter_veterinary_centre_data:
+  - text: Please provide following Information !
+  utter_ask_veterinary_centre_state_Name:
+  - text: Please tell state name!
+  utter_ask_veterinary_centre_District_Name:
+  - text: Please tell District Name !
+  utter_ask_veterinary_centre_Block_Name:
+  - text: Please tell Block Name !
+  utter_ask_Diagnostic_Laboratory_state_Name:
+  - text: Please tell state name!
+  utter_ask_msp_crop_name:
+  - text: Please tell crop name to know MSP!
+  utter_ask_msp_year:
+  - text: Please tell year from 2010-11 to 2020-21 Know MSP!
+  utter_ask_nitrogen:
+  - text: Please tell Nitrogen value!
+  utter_ask_potassium:
+  - text: Please tell potassium value!
+  utter_ask_phosphorus:
+  - text: Please tell phosphorus value!
+  utter_ask_temperature:
+  - text: Please tell temperature value!
+  utter_ask_humidity:
+  - text: Please tell humidity value!
+  utter_ask_ph:
+  - text: Please tell ph value!
+  utter_ask_rainfall:
+  - text: Please tell rainfall!
+  utter_ask_Current_Daily_Price_state:
+  - text: Please tell state name
+  utter_ask_Current_Daily_Price_commodity:
+  - text: Please tell Commodity to know current market information!
+  utter_ask:
+  - text: Ask me anything related to agriculture. I will be happy to resolve your query!
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a Kissan Shalakar bot,Bhoomija.
+  utter_maize:
+  - image: http://gecmunger.in/bimage/cropintro.jpg
+    text: In India, Maize is grown throughout the year. It is predominantly a kharif crop with 85 per cent of the area under cultivation in the season. Maize is the third most important cereal crop in India after rice and wheat. It accounts for around 10 per cent of total food grain production in the country.
+  utter_maize_producing_state:
+  - image: http://gecmunger.in/bimage/maizestate.jpg
+    text: Maize producing states
+  utter_climate_for_maize_Cultivation:
+  - text: Maize cannot tolerate frost and hence it is a Kharif crop sown just before the monsoons arrive in India. It requires about 70 mm of rainfall. Alternate spells of sunshine and rainfall is optimal for maize production. It can tolerate temperature up to 35 degree  centrigrate.
+  utter_season_for_maize_production:
+  - text: Since maize requires a good amount of rainfall followed by a healthy spell of sunshine, it is a kharif crop. Sowing is done generally during June and July months. However, it is also sown during the months of January-February and September-October. In case of seed production, the seed maturity period must not coincide with the monsoons. Hence farmers sow during the November and December months for seed production.
+  utter_soil_for_maize_production_in_India:
+  - text: A soil with pH of 5.5 to 7.0 and a good drainage capacity is preferred for maize cultivation. Loamy sand, black soil and even clayey loam is suitable for maize. Both red soil and alluvial are said to be optimal for growing maize. However, it requires a good amount of organic matter even in a super-fertile soil. In case of black soil of the clayey variety, it is advisable to mix a considerable amount of sand so as to increase the drainage capacity of the soil. Soils that hold water is not preferred for maize cultivation.
+  utter_crop_rotation_with_maize_crop:
+  - text: Maize can be grown as a single crop in a year or 2-3 crops in the same year because both short and long duration varieties of the crops are available. In areas where maize is grown as a mixed crop, crops that are of short variety are grown between the tall maize plants. When short duration variety of maize is cultivated, it is generally rotated with crops like potatoes, beans, chillies, chrysanthemum, onions, etc. Some farmers also grow ragi although it is also a cereal crop. In places like Uttar Pradesh, where maize is grown as a field crop, carrots or wheat are grown as subordinate crop.
+  utter_seed_rate_of_Maize_per_acre:
+  - text: The optimum seeding rate ranged from about 28,000 to 40,000 seeds per acre with an average economic optimum seeding rate of 34,000 seeds per acre.
+  utter_water_requirement_in_maize_production:
+  - text: Maize is both sensitive to less water and more water. Hence a well-drained soil that lets water drain off while holding back adequate amount of moisture is preferred. In other words, irrigation must be regulated as per requirement. Moisture levels must be maintained at optimum during the flowering stage since it is a critical stage for maximum yield production. Drip irrigation once in every 2 days is the most preferred method of irrigation as it ensures moisture retention to optimal levels.
+  utter_Pests_and_Diseases_in_maize_cultivation:
+  - text: The most common disease affecting maize crop is downy mildew. Leaf spot and blight is the next major disease. Spraying half Kg of Mancozeb per acre 20 days after sowing takes care of both these diseases even in high intensity. However, in severe cases, it is advisable to remove the affected plant and destroy it completely.
+  utter_Seed_germination_time_and_temperature_of_Maize:
+  - text: Maize is a warm-season crop. Maize seeds germinate approximately in 4 to 10 days. Seed germination and emergence are optimal when soil temperatures are approximately 29 to 32 degree centrigrate. At 12-15 degree centrigrate Maize will take 10 to 14 days to emerge. At 18-21 degree centrigrate Maize only takes 5 to 8 days to emerge.
+  utter_spacing_of_Maize_seed_or_Maize_plant_distance:
+  - text: Sow Maize about 1 to 1.5 inch deep. Plant Maize seeds 2 to 4 inches apart in short, side-by-side rows to form a block, rather than one long row. You can grow several Maize plants on mounds or inverted hills. Planting in a block or in clump will help ensure pollination. Thin plants from about 12 to 18 inches apart for short varieties and 18 to 24 inches apart for tall varieties once plants are 4 to 6 inches tall. Maize planted too closely will need more water and fertilizer and may offer a smaller yield. For a continuous harvest, succession plant Maize every 2 weeks or plant early, midseason, and late varieties at the same time. Rows must be spaced 30 to 36 inches apart. Increase seeding rates to ensure a good stand if soils are cold or using seed that has not been treated with a fungicide.
+  utter_maize_sowing_and_planting_tips:
+  - text: Grow Maize plants from seeds or seedlings. The seed is viable for 2 years and direct sow Maize in the garden in spring after all danger of frost has passed and the soil has warmed to 60°F (16°C).
+  - text: The optimal soil temperature for growing Maize is about 18 to 24°C. Maize plants will not germinate in soil chillier than 10°C.
+  - text: To start Maize plants indoors, sow seed in peat pots 4 to 3 weeks before planting out. The optimal indoor temperature must be 21°C until germination.
+  - text: Sow seed 1 to 1.5 inch deep. Maize seeds germinate in 4 to 10 days. Transplant Maize into the garden after the soil has warmed to at least 21°C.
+  - text: Space Maize 12 inches apart in all directions; plant Maize in blocks of at least 4 rows for optimal pollination and about 4 plants for each square foot.
+  - text: Keep the soil moist; letting the soil dry out will interrupt pod development. Fertilize the plant with fish emulsion or a soluble complete fertilizer at half strength.
+  - text: Add aged compost to planting beds in advance of transplanting and Maize prefers a soil pH range of 5.8 to 6.8. Grow Maize plant in full sun for best yield.
+  utter_Process_of_germinating_Maize_seeds1:
+  - text: 1. "Place Maize seeds in a clear glass or in a small jar cover them with water and let them soak overnight. While the kernels won’t double in size, they will expand by using a jar or glass with extra room."
+  utter_Process_of_germinating_Maize_seeds2:
+  - text: 2. "Drain the Maize seeds in the morning and give them a fresh rinse in cool water. Cover them with a damp paper towel to conserve moisture, and continue rinsing them at least 3 times daily until they germinate. In roughly 2 to 5 days, a small root will emerge from each kernel; it’s planting time."
+  utter_Process_of_germinating_Maize_seeds3:
+  - text: 3. "Soak small peat pots in water and then fill them with moistened soilless planting medium. Make a 1- to the 1.5-inch-deep indentation in the center of each pot with the finger or a pencil eraser. Carefully plant one seed in each pot. Then, cover the hole with a moistened medium."
+  utter_Process_of_germinating_Maize_seeds4:
+  - text: 4. "Put the planted pots on a bread rack with a tray underneath it to catch excess water. Then, leaving an air space at the bottom of the pot discourages the taproot from growing out of the pot."
+  utter_Process_of_germinating_Maize_seeds5:
+  - text: 5. "Set the pots in a sunny location. Maize is a warm-season crop and maintains a room temperature of at least 21 degree centrigrate for the best results. Water the plant regularly. Transfer the pots to the garden once the plants have fully emerged and the outside soil temperature is at least 15 degree centrigrate."
+  utter_How_much_Maize_do_you_get_from_one_plant:
+  - text: One Maize plant, given adequate growing conditions, will produce between 2 and 4 ears of Maize. Early plant varieties produce fewer, while later-maturing types produce slightly more.
+  utter_How_long_does_Maize_take_to_grow:
+  - text: Maize planted in cold, wet soil is unlikely to seed germinate. Maize plant grows best in air temperatures from 15 to 35 degree centrigrate. Maize can take from 60 to 100 days to reach harvest depending upon plant variety and the amount of heat during the growing season.Maize is ready for harvest 20 days after the silk first appears. At Maize harvest time, the silk turns brown, but the husks are still green. Each stalk has at least one ear near the top. When conditions are right, you can get another ear to lower down on the stalk.
+  utter_Maize_turning_purple:
+  - text: The purple color is from a pigment that forms when there is more sugar in the plant leaves than the plant can utilize. Low phosphorus inhibits sugar movement out of plant leaves, and cool, dry soils reduce root growth and sugar movement to the roots. Both of these increases sugars in the plant and make the tissue turn purple.
+  utter_Maize_turning_red:
+  - text: Maize plants in many fields are turning red and that is not a good sign for Maize cultivation. The red color is coming from a build-up of sugar in the plant leaves and stalks. Then the build-up of sugar is a result of too few kernels being developed on the ears. Heat stress during pollination was the primary culprit of red color leaves in these fields.
+  utter_need_to_soakMaize_needs_before_planting:
+  - text: Maize seeds can appear shrunken and shriveled; before they can germinate, they should slowly plump up with water. To help them along, soak dry Maize seeds in water at room temperature overnight before planting.
+  utter_Maize_need_light_to_germinate:
+  - text: Maize is easy to grow, but it does require ample growing space and plenty of sunlight. Maize seed, especially the super sweet varieties, needs to be planted after the soil has warmed up to at least 15 degree centrigrate.
+  utter_chitchat/maize_natural_enemies:
+  - text: Stem borers, fall armyworm, shoot fly, Spiders, coccinellids, ear wigs, lace wings, dragon flies.
+  utter_chitchat/pheromone_traps_in_maize:
+  - text: The use of pheromone traps helps in monitoring the fall armyworm and regulating the interventions for its management.
+  utter_out_of_scope:
+  - text: Sorry, I didn't get what you said. Please rephrase what you said. This bot has been designed
+actions:
+- Current_Daily_Price_form_submit
+- Diagnostic_Laboratory_submit
+- action_show_time
+- crop_recommendation_submit
+- fertilizer_calulation_link
+- location_entry_to_know_weather_submit
+- msp_info_form_submit
+- search_video_submit
+- soil_moisture_database_open
+- soil_nutrient_info_database_open
+- utter_Post_Harvest_info
+- utter_agriculture_info
+- utter_chitchat
+- utter_greet
+- utter_query
+- veterinary_centre_submit
+forms:
+  search_video_form:
+    search_url:
+    - type: from_text
+  location_entry_form:
+    location:
+    - type: from_text
+  veterinary_centre_form:
+    veterinary_centre_State_Name:
+    - type: from_text
+    veterinary_centre_District_Name:
+    - type: from_text
+    veterinary_centre_Block_Name:
+    - type: from_text
+  Diagnostic_Laboratory_form:
+    Diagnostic_Laboratory_State_Name:
+    - type: from_text
+  msp_info_form:
+    msp_crop_name:
+    - type: from_text
+    msp_year:
+    - type: from_text
+  Current_Daily_Price_form:
+    Current_Daily_Price_state:
+    - type: from_text
+    Current_Daily_Price_commodity:
+    - type: from_text
+  Crop_recommendation_form:
+    nitrogen:
+    - type: from_text
+    potassium:
+    - type: from_text
+    phosphorus:
+    - type: from_text
+    temperature:
+    - type: from_text
+    humidity:
+    - type: from_text
+    ph:
+    - type: from_text
+    rainfall:
+    - type: from_text

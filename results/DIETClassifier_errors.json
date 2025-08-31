@@ -1,0 +1,169 @@
+[
+  {
+    "text": "i am looking for video on paddy cultivation",
+    "entities": [
+      {
+        "start": 26,
+        "end": 43,
+        "value": "paddy cultivation",
+        "entity": "search_url"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "search_url",
+        "start": 32,
+        "end": 43,
+        "confidence_entity": 0.7553578019142151,
+        "value": "cultivation",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "videos on paddy disease",
+    "entities": [
+      {
+        "start": 10,
+        "end": 23,
+        "value": "paddy diseasee",
+        "entity": "search_url"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "search_url",
+        "start": 16,
+        "end": 23,
+        "confidence_entity": 0.9870867729187012,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "paddy disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "paddy disease",
+        "entity": "search_url"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "search_url",
+        "start": 6,
+        "end": 13,
+        "confidence_entity": 0.8668094277381897,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "Bidar",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "Bidar",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Maize cultivation guideline.",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "search_url",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.8745435476303101,
+        "value": "Maize cultivation",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "potato disease",
+    "entities": [
+      {
+        "start": 0,
+        "end": 14,
+        "value": "potato disease",
+        "entity": "search_url"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "search_url",
+        "start": 7,
+        "end": 14,
+        "confidence_entity": 0.9969121217727661,
+        "value": "disease",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "wheat farming",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "wheat farming",
+        "entity": "search_url"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "search_url",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.613900363445282,
+        "value": "wheat",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I live in Khagaria",
+    "entities": [
+      {
+        "start": 10,
+        "end": 18,
+        "value": "Khagaria",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "My current location is Hassan",
+    "entities": [
+      {
+        "start": 23,
+        "end": 29,
+        "value": "Hassan",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "Currently I am located in Dharwad",
+    "entities": [
+      {
+        "start": 26,
+        "end": 33,
+        "value": "Dharwad",
+        "entity": "location"
+      }
+    ],
+    "predicted_entities": []
+  }
+]

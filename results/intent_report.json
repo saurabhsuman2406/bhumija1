@@ -1,0 +1,286 @@
+{
+  "goodbye": {
+    "precision": 0.7755102040816326,
+    "recall": 0.8085106382978723,
+    "f1-score": 0.7916666666666665,
+    "support": 47,
+    "confused_with": {
+      "greet": 3,
+      "deny": 2
+    }
+  },
+  "play_video": {
+    "precision": 0.6666666666666666,
+    "recall": 0.9333333333333333,
+    "f1-score": 0.7777777777777778,
+    "support": 15,
+    "confused_with": {
+      "Pests_and_Diseases_in_maize_cultivation": 1
+    }
+  },
+  "greet": {
+    "precision": 0.8709677419354839,
+    "recall": 0.7105263157894737,
+    "f1-score": 0.782608695652174,
+    "support": 38,
+    "confused_with": {
+      "goodbye": 5,
+      "mood_great": 2
+    }
+  },
+  "How_much_Maize_do_you_get_from_one_plant": {
+    "precision": 0.6,
+    "recall": 0.75,
+    "f1-score": 0.6666666666666665,
+    "support": 4,
+    "confused_with": {
+      "How_long_does_Maize_take_to_grow": 1
+    }
+  },
+  "deny": {
+    "precision": 0.4444444444444444,
+    "recall": 0.5714285714285714,
+    "f1-score": 0.5,
+    "support": 7,
+    "confused_with": {
+      "mood_unhappy": 1,
+      "mood_great": 1
+    }
+  },
+  "spacing_of_Maize_seed_or_Maize_plant_distance": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 4,
+    "confused_with": {}
+  },
+  "maize_producing_state": {
+    "precision": 0.875,
+    "recall": 0.875,
+    "f1-score": 0.875,
+    "support": 8,
+    "confused_with": {
+      "goodbye": 1
+    }
+  },
+  "season_for_maize_production": {
+    "precision": 1.0,
+    "recall": 0.5,
+    "f1-score": 0.6666666666666666,
+    "support": 4,
+    "confused_with": {
+      "How_long_does_Maize_take_to_grow": 1,
+      "Pests_and_Diseases_in_maize_cultivation": 1
+    }
+  },
+  "chitchat": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 6,
+    "confused_with": {}
+  },
+  "bot_challenge": {
+    "precision": 0.9024390243902439,
+    "recall": 1.0,
+    "f1-score": 0.9487179487179488,
+    "support": 37,
+    "confused_with": {}
+  },
+  "water_requirement_in_maize_production": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "How_long_does_Maize_take_to_grow": 2,
+      "soil_for_maize_production_in_India": 1,
+      "Process_of_germinating_Maize_seeds": 1
+    }
+  },
+  "Process_of_germinating_Maize_seeds": {
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1-score": 0.75,
+    "support": 4,
+    "confused_with": {
+      "Seed_germination_time_and_temperature_of_Maize": 1
+    }
+  },
+  "Maize_changing_color": {
+    "precision": 0.8461538461538461,
+    "recall": 1.0,
+    "f1-score": 0.9166666666666666,
+    "support": 11,
+    "confused_with": {}
+  },
+  "crop_rotation_with_maize_crop": {
+    "precision": 0.6666666666666666,
+    "recall": 0.5,
+    "f1-score": 0.5714285714285715,
+    "support": 4,
+    "confused_with": {
+      "maize_sowing_and_planting_tips": 2
+    }
+  },
+  "maize_sowing_and_planting_tips": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {
+      "play_video": 3,
+      "climate_for_maize_Cultivation": 2,
+      "spacing_of_Maize_seed_or_Maize_plant_distance": 1
+    }
+  },
+  "mood_unhappy": {
+    "precision": 0.6,
+    "recall": 0.6428571428571429,
+    "f1-score": 0.6206896551724138,
+    "support": 14,
+    "confused_with": {
+      "mood_great": 2,
+      "goodbye": 1
+    }
+  },
+  "seed_rate_of_Maize_per_acre": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "soil_for_maize_production_in_India": {
+    "precision": 0.7142857142857143,
+    "recall": 0.7142857142857143,
+    "f1-score": 0.7142857142857143,
+    "support": 7,
+    "confused_with": {
+      "Maize_need_light_to_germinate": 1,
+      "climate_for_maize_Cultivation": 1
+    }
+  },
+  "give_time": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 4,
+    "confused_with": {}
+  },
+  "out_of_scope": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 5,
+    "confused_with": {
+      "goodbye": 1,
+      "Maize_need_light_to_germinate": 1,
+      "play_video": 1
+    }
+  },
+  "maize_intro": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 4,
+    "confused_with": {
+      "maize_sowing_and_planting_tips": 2,
+      "play_video": 1,
+      "maize_producing_state": 1
+    }
+  },
+  "Seed_germination_time_and_temperature_of_Maize": {
+    "precision": 0.6,
+    "recall": 0.75,
+    "f1-score": 0.6666666666666665,
+    "support": 4,
+    "confused_with": {
+      "How_long_does_Maize_take_to_grow": 1
+    }
+  },
+  "Pests_and_Diseases_in_maize_cultivation": {
+    "precision": 0.7777777777777778,
+    "recall": 1.0,
+    "f1-score": 0.8750000000000001,
+    "support": 7,
+    "confused_with": {}
+  },
+  "How_long_does_Maize_take_to_grow": {
+    "precision": 0.6,
+    "recall": 0.8181818181818182,
+    "f1-score": 0.6923076923076923,
+    "support": 11,
+    "confused_with": {
+      "soil_for_maize_production_in_India": 1,
+      "play_video": 1
+    }
+  },
+  "location": {
+    "precision": 0.8,
+    "recall": 0.5714285714285714,
+    "f1-score": 0.6666666666666666,
+    "support": 7,
+    "confused_with": {
+      "goodbye": 1,
+      "Maize_changing_color": 1
+    }
+  },
+  "need_to_soakMaize_needs_before_planting": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 2,
+    "confused_with": {}
+  },
+  "Maize_need_light_to_germinate": {
+    "precision": 0.3333333333333333,
+    "recall": 0.5,
+    "f1-score": 0.4,
+    "support": 2,
+    "confused_with": {
+      "out_of_scope": 1
+    }
+  },
+  "mood_great": {
+    "precision": 0.5384615384615384,
+    "recall": 0.5,
+    "f1-score": 0.5185185185185186,
+    "support": 14,
+    "confused_with": {
+      "mood_unhappy": 3,
+      "deny": 1
+    }
+  },
+  "climate_for_maize_Cultivation": {
+    "precision": 0.5714285714285714,
+    "recall": 1.0,
+    "f1-score": 0.7272727272727273,
+    "support": 4,
+    "confused_with": {}
+  },
+  "affirm": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1-score": 0.0,
+    "support": 6,
+    "confused_with": {
+      "goodbye": 2,
+      "deny": 1,
+      "mood_unhappy": 1
+    }
+  },
+  "accuracy": 0.7372013651877133,
+  "macro avg": {
+    "precision": 0.6199934065430862,
+    "recall": 0.6631850701867499,
+    "f1-score": 0.6309535767044512,
+    "support": 293
+  },
+  "weighted avg": {
+    "precision": 0.7031516087892418,
+    "recall": 0.7372013651877133,
+    "f1-score": 0.7128013610211931,
+    "support": 293
+  }
+}

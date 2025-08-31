@@ -1,0 +1,618 @@
+[
+  {
+    "text": "good evening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.8140439987182617
+    }
+  },
+  {
+    "text": "goodevening",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.6304877400398254
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9998342990875244
+    }
+  },
+  {
+    "text": "Hieeeeeeeeeeeee",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.44092440605163574
+    }
+  },
+  {
+    "text": "ey boss",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.39011988043785095
+    }
+  },
+  {
+    "text": "bhoomija I need you",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.6784722208976746
+    }
+  },
+  {
+    "text": "cu",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.27697184681892395
+    }
+  },
+  {
+    "text": "have a nice day",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "crop_rotation_with_maize_crop",
+      "confidence": 0.3176615536212921
+    }
+  },
+  {
+    "text": "bye was nice talking to you",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.7253081798553467
+    }
+  },
+  {
+    "text": "cya",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.3177354037761688
+    }
+  },
+  {
+    "text": "farewell",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "maize_intro",
+      "confidence": 0.2617585361003876
+    }
+  },
+  {
+    "text": "gotta go",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.4721185564994812
+    }
+  },
+  {
+    "text": "take care",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "How_long_does_Maize_take_to_grow",
+      "confidence": 0.28188735246658325
+    }
+  },
+  {
+    "text": "y",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.3854532241821289
+    }
+  },
+  {
+    "text": "of course",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5389338731765747
+    }
+  },
+  {
+    "text": "correct",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "location",
+      "confidence": 0.21512217819690704
+    }
+  },
+  {
+    "text": "not really",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.9968296885490417
+    }
+  },
+  {
+    "text": "perfect",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.3607127070426941
+    }
+  },
+  {
+    "text": "feeling like a king",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.38505369424819946
+    }
+  },
+  {
+    "text": "I am feeling very good",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.47158461809158325
+    }
+  },
+  {
+    "text": "I am disappointed",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "spacing_of_Maize_seed_or_Maize_plant_distance",
+      "confidence": 0.2726037800312042
+    }
+  },
+  {
+    "text": "not good",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.7058514356613159
+    }
+  },
+  {
+    "text": "What is maize",
+    "intent": "maize_intro",
+    "intent_prediction": {
+      "name": "play_video",
+      "confidence": 0.19103658199310303
+    }
+  },
+  {
+    "text": "maize in india",
+    "intent": "maize_intro",
+    "intent_prediction": {
+      "name": "maize_producing_state",
+      "confidence": 0.466126412153244
+    }
+  },
+  {
+    "text": "Statistics of corn around India",
+    "intent": "maize_producing_state",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.5625011324882507
+    }
+  },
+  {
+    "text": "what is season for maize cultivation in India",
+    "intent": "season_for_maize_production",
+    "intent_prediction": {
+      "name": "Pests_and_Diseases_in_maize_cultivation",
+      "confidence": 0.22676856815814972
+    }
+  },
+  {
+    "text": "best season to grow maize",
+    "intent": "season_for_maize_production",
+    "intent_prediction": {
+      "name": "How_long_does_Maize_take_to_grow",
+      "confidence": 0.5043252110481262
+    }
+  },
+  {
+    "text": "what is soil condition required for the maize cultivation",
+    "intent": "soil_for_maize_production_in_India",
+    "intent_prediction": {
+      "name": "climate_for_maize_Cultivation",
+      "confidence": 0.2054743766784668
+    }
+  },
+  {
+    "text": "can you tell me about the soil requirement for the maize crop",
+    "intent": "soil_for_maize_production_in_India",
+    "intent_prediction": {
+      "name": "Maize_need_light_to_germinate",
+      "confidence": 0.24212564527988434
+    }
+  },
+  {
+    "text": "irrigation requirement of the maize crop",
+    "intent": "water_requirement_in_maize_production",
+    "intent_prediction": {
+      "name": "Process_of_germinating_Maize_seeds",
+      "confidence": 0.22625835239887238
+    }
+  },
+  {
+    "text": "how to irrigate maize",
+    "intent": "water_requirement_in_maize_production",
+    "intent_prediction": {
+      "name": "How_long_does_Maize_take_to_grow",
+      "confidence": 0.8118104338645935
+    }
+  },
+  {
+    "text": "how long maize seeds take to germinate.",
+    "intent": "Seed_germination_time_and_temperature_of_Maize",
+    "intent_prediction": {
+      "name": "How_long_does_Maize_take_to_grow",
+      "confidence": 0.8090260624885559
+    }
+  },
+  {
+    "text": "Will you give me some tips for maize cultivation.",
+    "intent": "maize_sowing_and_planting_tips",
+    "intent_prediction": {
+      "name": "play_video",
+      "confidence": 0.28961870074272156
+    }
+  },
+  {
+    "text": "need suggestion about  maize cultivation?",
+    "intent": "maize_sowing_and_planting_tips",
+    "intent_prediction": {
+      "name": "play_video",
+      "confidence": 0.35882052779197693
+    }
+  },
+  {
+    "text": "maize planting tips",
+    "intent": "maize_sowing_and_planting_tips",
+    "intent_prediction": {
+      "name": "spacing_of_Maize_seed_or_Maize_plant_distance",
+      "confidence": 0.2530524432659149
+    }
+  },
+  {
+    "text": "How much Maize do you get from one plant",
+    "intent": "How_much_Maize_do_you_get_from_one_plant",
+    "intent_prediction": {
+      "name": "How_long_does_Maize_take_to_grow",
+      "confidence": 0.47206923365592957
+    }
+  },
+  {
+    "text": "approx time period for maize cultivation",
+    "intent": "How_long_does_Maize_take_to_grow",
+    "intent_prediction": {
+      "name": "play_video",
+      "confidence": 0.26461151242256165
+    }
+  },
+  {
+    "text": "duration of the maize production",
+    "intent": "How_long_does_Maize_take_to_grow",
+    "intent_prediction": {
+      "name": "soil_for_maize_production_in_India",
+      "confidence": 0.5095000267028809
+    }
+  },
+  {
+    "text": "paddy disease",
+    "intent": "play_video",
+    "intent_prediction": {
+      "name": "Pests_and_Diseases_in_maize_cultivation",
+      "confidence": 0.5319803953170776
+    }
+  },
+  {
+    "text": "Bidar",
+    "intent": "location",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8374537825584412
+    }
+  },
+  {
+    "text": "I want to order food",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.5869907736778259
+    }
+  },
+  {
+    "text": "Who's the US President?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "Maize_need_light_to_germinate",
+      "confidence": 0.20106275379657745
+    }
+  },
+  {
+    "text": "covid",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "play_video",
+      "confidence": 0.3311671316623688
+    }
+  },
+  {
+    "text": "let's go",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9641450643539429
+    }
+  },
+  {
+    "text": "Hi, bot",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "bot_challenge",
+      "confidence": 0.8963402509689331
+    }
+  },
+  {
+    "text": "need your assistance",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "deny",
+      "confidence": 0.31178608536720276
+    }
+  },
+  {
+    "text": "please answer my query",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "Maize_changing_color",
+      "confidence": 0.5117962956428528
+    }
+  },
+  {
+    "text": "Ram Ram",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "How_much_Maize_do_you_get_from_one_plant",
+      "confidence": 0.23969705402851105
+    }
+  },
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.9986985325813293
+    }
+  },
+  {
+    "text": "toodle-oo",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.2862458825111389
+    }
+  },
+  {
+    "text": "yes",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.7697709202766418
+    }
+  },
+  {
+    "text": "indeed",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.6132506132125854
+    }
+  },
+  {
+    "text": "that sounds good",
+    "intent": "affirm",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.4628176689147949
+    }
+  },
+  {
+    "text": "I don't think so",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.352440744638443
+    }
+  },
+  {
+    "text": "don't like that",
+    "intent": "deny",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.25981539487838745
+    }
+  },
+  {
+    "text": "great",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "play_video",
+      "confidence": 0.7822576761245728
+    }
+  },
+  {
+    "text": "I am going to save the world",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "Seed_germination_time_and_temperature_of_Maize",
+      "confidence": 0.22371193766593933
+    }
+  },
+  {
+    "text": "super stoked",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.2665565013885498
+    }
+  },
+  {
+    "text": "so good",
+    "intent": "mood_great",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.7020912170410156
+    }
+  },
+  {
+    "text": "my day was horrible",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.8939710259437561
+    }
+  },
+  {
+    "text": "I don't feel very well",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "mood_great",
+      "confidence": 0.8225630521774292
+    }
+  },
+  {
+    "text": "unhappy",
+    "intent": "mood_unhappy",
+    "intent_prediction": {
+      "name": "How_much_Maize_do_you_get_from_one_plant",
+      "confidence": 0.28491416573524475
+    }
+  },
+  {
+    "text": "tell me about maize",
+    "intent": "maize_intro",
+    "intent_prediction": {
+      "name": "maize_sowing_and_planting_tips",
+      "confidence": 0.38835376501083374
+    }
+  },
+  {
+    "text": "tell me about corn",
+    "intent": "maize_intro",
+    "intent_prediction": {
+      "name": "maize_sowing_and_planting_tips",
+      "confidence": 0.3820727467536926
+    }
+  },
+  {
+    "text": "do you have any idea about the crop rotation",
+    "intent": "crop_rotation_with_maize_crop",
+    "intent_prediction": {
+      "name": "maize_sowing_and_planting_tips",
+      "confidence": 0.4447731077671051
+    }
+  },
+  {
+    "text": "crop rotation with maize",
+    "intent": "crop_rotation_with_maize_crop",
+    "intent_prediction": {
+      "name": "maize_sowing_and_planting_tips",
+      "confidence": 0.5468008518218994
+    }
+  },
+  {
+    "text": "can you tell me water requirement of the maize cultivation",
+    "intent": "water_requirement_in_maize_production",
+    "intent_prediction": {
+      "name": "soil_for_maize_production_in_India",
+      "confidence": 0.7362682819366455
+    }
+  },
+  {
+    "text": "How much water is required for the maize cultivation",
+    "intent": "water_requirement_in_maize_production",
+    "intent_prediction": {
+      "name": "How_long_does_Maize_take_to_grow",
+      "confidence": 0.36065322160720825
+    }
+  },
+  {
+    "text": "Maize cultivation guideline.",
+    "intent": "maize_sowing_and_planting_tips",
+    "intent_prediction": {
+      "name": "play_video",
+      "confidence": 0.9191632866859436
+    }
+  },
+  {
+    "text": "What is best practice for the maize cutivation.",
+    "intent": "maize_sowing_and_planting_tips",
+    "intent_prediction": {
+      "name": "climate_for_maize_Cultivation",
+      "confidence": 0.41523662209510803
+    }
+  },
+  {
+    "text": "corn cultivation best practice",
+    "intent": "maize_sowing_and_planting_tips",
+    "intent_prediction": {
+      "name": "climate_for_maize_Cultivation",
+      "confidence": 0.394103467464447
+    }
+  },
+  {
+    "text": "methods for the maize germination seeeds",
+    "intent": "Process_of_germinating_Maize_seeds",
+    "intent_prediction": {
+      "name": "Seed_germination_time_and_temperature_of_Maize",
+      "confidence": 0.4845387637615204
+    }
+  },
+  {
+    "text": "What is the light requirement to germinate maize seeds?",
+    "intent": "Maize_need_light_to_germinate",
+    "intent_prediction": {
+      "name": "out_of_scope",
+      "confidence": 0.34303614497184753
+    }
+  },
+  {
+    "text": "My current location is Hassan",
+    "intent": "location",
+    "intent_prediction": {
+      "name": "Maize_changing_color",
+      "confidence": 0.43395721912384033
+    }
+  },
+  {
+    "text": "Currently I am located in Dharwad",
+    "intent": "location",
+    "intent_prediction": {
+      "name": "mood_unhappy",
+      "confidence": 0.4834383428096771
+    }
+  },
+  {
+    "text": "What is 2 + 2?",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "maize_intro",
+      "confidence": 0.4191815257072449
+    }
+  },
+  {
+    "text": "kya karen",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "goodbye",
+      "confidence": 0.9590738415718079
+    }
+  }
+]
